@@ -1,0 +1,6 @@
+{
+  "name": "jeu-de-dame-en-ligne",
+  "devDependencies": {
+    "convex": "^1.11.0"
+  }
+}
