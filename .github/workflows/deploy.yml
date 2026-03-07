@@ -20,6 +20,6 @@ jobs:
         run: npm install
 
       - name: Deploy to Convex
-        run: npx convex deploy --bundle=prod
+        run: npx convex deploy --prod
         env:
           CONVEX_DEPLOY_KEY: ${{ secrets.CONVEX_DEPLOY_KEY }}
