@@ -1,36 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Jeu de dames</title>
-
-<style>
-
-body{
-font-family:Arial;
-text-align:center;
-}
-
-#board{
-display:grid;
-grid-template-columns:repeat(8,60px);
-width:480px;
-margin:auto;
-}
-
-.square{
-width:60px;
-height:60px;
-}
-
-.black{
-background:#444;
-}
-
-.white{
-background:#eee;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -39,27 +12,8 @@ background:#eee;
 
 <div id="board"></div>
 
-<script>
-
-const board=document.getElementById("board")
-
-for(let i=0;i<64;i++){
-
-const square=document.createElement("div")
-
-square.classList.add("square")
-
-if((Math.floor(i/8)+i)%2==0){
-square.classList.add("white")
-}else{
-square.classList.add("black")
-}
-
-board.appendChild(square)
-
-}
-
-</script>
+<script src="game.js"></script>
 
 </body>
+
 </html>
